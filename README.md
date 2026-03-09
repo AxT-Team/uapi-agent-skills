@@ -4,10 +4,10 @@
 
 适合按接口粒度给 AI 安装和调用。下面按分类展开，点开具体接口后可以直接复制安装命令。
 
-### Misc
+### 常用工具
 
 <details>
-<summary>展开查看 Misc</summary>
+<summary>展开查看 常用工具</summary>
 
 <details>
 <summary>Adcode 国内外行政区域查询</summary>
@@ -147,10 +147,10 @@
 
 </details>
 
-### Image
+### 图片处理
 
 <details>
-<summary>展开查看 Image</summary>
+<summary>展开查看 图片处理</summary>
 
 <details>
 <summary>SVG转图片</summary>
@@ -254,10 +254,10 @@
 
 </details>
 
-### Text
+### 文本处理
 
 <details>
-<summary>展开查看 Text</summary>
+<summary>展开查看 文本处理</summary>
 
 <details>
 <summary>AES 加密</summary>
@@ -361,10 +361,10 @@
 
 </details>
 
-### Network
+### 网络工具
 
 <details>
-<summary>展开查看 Network</summary>
+<summary>展开查看 网络工具</summary>
 
 <details>
 <summary>Ping 主机</summary>
@@ -459,10 +459,10 @@
 
 </details>
 
-### Social
+### 社交平台
 
 <details>
-<summary>展开查看 Social</summary>
+<summary>展开查看 社交平台</summary>
 
 <details>
 <summary>查询 B站投稿</summary>
@@ -539,10 +539,10 @@
 
 </details>
 
-### Game
+### 游戏相关
 
 <details>
-<summary>展开查看 Game</summary>
+<summary>展开查看 游戏相关</summary>
 
 <details>
 <summary>Epic 免费游戏</summary>
@@ -592,10 +592,10 @@
 
 </details>
 
-### Random
+### 随机内容
 
 <details>
-<summary>展开查看 Random</summary>
+<summary>展开查看 随机内容</summary>
 
 <details>
 <summary>答案之书</summary>
@@ -636,10 +636,10 @@
 
 </details>
 
-### Translate
+### 翻译能力
 
 <details>
-<summary>展开查看 Translate</summary>
+<summary>展开查看 翻译能力</summary>
 
 <details>
 <summary>AI智能翻译</summary>
@@ -680,10 +680,10 @@
 
 </details>
 
-### WebParse
+### 网页解析
 
 <details>
-<summary>展开查看 WebParse</summary>
+<summary>展开查看 网页解析</summary>
 
 <details>
 <summary>提取网页元数据</summary>
@@ -794,10 +794,10 @@
 
 </details>
 
-### Convert
+### 格式转换
 
 <details>
-<summary>展开查看 Convert</summary>
+<summary>展开查看 格式转换</summary>
 
 <details>
 <summary>JSON 格式化</summary>
@@ -820,10 +820,10 @@
 
 </details>
 
-### Status
+### 状态查询
 
 <details>
-<summary>展开查看 Status</summary>
+<summary>展开查看 状态查询</summary>
 
 <details>
 <summary>获取API端点使用统计</summary>
@@ -872,10 +872,10 @@
 
 </details>
 
-### Daily
+### 每日内容
 
 <details>
-<summary>展开查看 Daily</summary>
+<summary>展开查看 每日内容</summary>
 
 <details>
 <summary>每日新闻图</summary>
@@ -889,10 +889,10 @@
 
 </details>
 
-### Poem
+### 语录内容
 
 <details>
-<summary>展开查看 Poem</summary>
+<summary>展开查看 语录内容</summary>
 
 <details>
 <summary>一言</summary>

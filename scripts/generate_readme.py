@@ -10,6 +10,21 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "skills" / "_manifest.json"
 README_PATH = ROOT / "README.md"
 REPO_SLUG = "AxT-Team/uapi-agent-skills"
+CATEGORY_TITLES = {
+    "Misc": "常用工具",
+    "Image": "图片处理",
+    "Text": "文本处理",
+    "Network": "网络工具",
+    "Social": "社交平台",
+    "Game": "游戏相关",
+    "Random": "随机内容",
+    "Translate": "翻译能力",
+    "WebParse": "网页解析",
+    "Convert": "格式转换",
+    "Status": "状态查询",
+    "Daily": "每日内容",
+    "Poem": "语录内容",
+}
 
 
 def load_manifest() -> dict:
@@ -25,16 +40,17 @@ def render_category_block(skills: list[dict]) -> list[str]:
     lines: list[str] = []
 
     for tag, entries in ordered_groups:
+        category_title = CATEGORY_TITLES.get(tag, tag)
         ordered_entries = sorted(
             entries,
             key=lambda item: (item["summary"], item["method"], item["path"], item["skill_name"]),
         )
         lines.extend(
             [
-                f"### {tag}",
+                f"### {category_title}",
                 "",
                 "<details>",
-                f"<summary>展开查看 {tag}</summary>",
+                f"<summary>展开查看 {category_title}</summary>",
                 "",
             ]
         )
