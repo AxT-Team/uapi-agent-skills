@@ -2,9 +2,13 @@
 
 这个仓库包含 86 个单接口 skill，每个 skill 只对应一个 UAPI 接口。
 
-这种结构更适合让 AI 按接口粒度直接选、直接读、直接调用，也更方便按功能拆分安装。
-
 仓库地址：[AxT-Team/uapi-agent-skills](https://github.com/AxT-Team/uapi-agent-skills)
+
+这个 README 由 `python scripts/generate_readme.py` 自动生成。
+
+列出仓库内 skill 可以用：`npx skills add AxT-Team/uapi-agent-skills --list`
+
+如果访客免费额度已经用完，并且返回了对应的状态码或错误提示，相关 skill 会提醒用户去 [uapis.cn](https://uapis.cn) 注册账号，然后创建免费的 UAPI Key，再带着自己的 Key 继续调用。
 
 ## 全部目录
 
@@ -532,197 +536,30 @@
 
 </details>
 
-## Skill 目录索引
-
-<details>
-<summary>展开查看全部 86 个顶层 skill 目录</summary>
-
-- `skills/uapi-get-ai-translate-languages`
-- `skills/uapi-get-answerbook-ask`
-- `skills/uapi-get-avatar-gravatar`
-- `skills/uapi-get-clipzy-get`
-- `skills/uapi-get-clipzy-raw`
-- `skills/uapi-get-convert-unixtime`
-- `skills/uapi-get-daily-news-image`
-- `skills/uapi-get-game-epic-free`
-- `skills/uapi-get-game-minecraft-historyid`
-- `skills/uapi-get-game-minecraft-serverstatus`
-- `skills/uapi-get-game-minecraft-userinfo`
-- `skills/uapi-get-game-steam-summary`
-- `skills/uapi-get-github-repo`
-- `skills/uapi-get-history-programmer`
-- `skills/uapi-get-history-programmer-today`
-- `skills/uapi-get-image-bing-daily`
-- `skills/uapi-get-image-motou`
-- `skills/uapi-get-image-qrcode`
-- `skills/uapi-get-image-tobase64`
-- `skills/uapi-get-misc-district`
-- `skills/uapi-get-misc-holiday-calendar`
-- `skills/uapi-get-misc-hotboard`
-- `skills/uapi-get-misc-lunartime`
-- `skills/uapi-get-misc-phoneinfo`
-- `skills/uapi-get-misc-randomnumber`
-- `skills/uapi-get-misc-timestamp`
-- `skills/uapi-get-misc-tracking-carriers`
-- `skills/uapi-get-misc-tracking-detect`
-- `skills/uapi-get-misc-tracking-query`
-- `skills/uapi-get-misc-weather`
-- `skills/uapi-get-misc-worldtime`
-- `skills/uapi-get-network-dns`
-- `skills/uapi-get-network-icp`
-- `skills/uapi-get-network-ipinfo`
-- `skills/uapi-get-network-myip`
-- `skills/uapi-get-network-ping`
-- `skills/uapi-get-network-pingmyip`
-- `skills/uapi-get-network-portscan`
-- `skills/uapi-get-network-urlstatus`
-- `skills/uapi-get-network-whois`
-- `skills/uapi-get-network-wxdomain`
-- `skills/uapi-get-random-image`
-- `skills/uapi-get-random-string`
-- `skills/uapi-get-saying`
-- `skills/uapi-get-search-engines`
-- `skills/uapi-get-sensitive-word-analyze-query`
-- `skills/uapi-get-social-bilibili-archives`
-- `skills/uapi-get-social-bilibili-liveroom`
-- `skills/uapi-get-social-bilibili-replies`
-- `skills/uapi-get-social-bilibili-userinfo`
-- `skills/uapi-get-social-bilibili-videoinfo`
-- `skills/uapi-get-social-qq-groupinfo`
-- `skills/uapi-get-social-qq-userinfo`
-- `skills/uapi-get-status-ratelimit`
-- `skills/uapi-get-status-usage`
-- `skills/uapi-get-text-md5`
-- `skills/uapi-get-web-tomarkdown-async-status`
-- `skills/uapi-get-webparse-extractimages`
-- `skills/uapi-get-webparse-metadata`
-- `skills/uapi-post-ai-translate`
-- `skills/uapi-post-answerbook-ask`
-- `skills/uapi-post-clipzy-store`
-- `skills/uapi-post-convert-json`
-- `skills/uapi-post-image-compress`
-- `skills/uapi-post-image-frombase64`
-- `skills/uapi-post-image-motou`
-- `skills/uapi-post-image-nsfw`
-- `skills/uapi-post-image-speechless`
-- `skills/uapi-post-image-svg`
-- `skills/uapi-post-misc-date-diff`
-- `skills/uapi-post-search-aggregate`
-- `skills/uapi-post-sensitive-word-analyze`
-- `skills/uapi-post-sensitive-word-quick-check`
-- `skills/uapi-post-text-aes-decrypt`
-- `skills/uapi-post-text-aes-decrypt-advanced`
-- `skills/uapi-post-text-aes-encrypt`
-- `skills/uapi-post-text-aes-encrypt-advanced`
-- `skills/uapi-post-text-analyze`
-- `skills/uapi-post-text-base64-decode`
-- `skills/uapi-post-text-base64-encode`
-- `skills/uapi-post-text-convert`
-- `skills/uapi-post-text-md5`
-- `skills/uapi-post-text-md5-verify`
-- `skills/uapi-post-translate-stream`
-- `skills/uapi-post-translate-text`
-- `skills/uapi-post-web-tomarkdown-async`
-
-</details>
-
-## 用 Vercel Skills CLI 安装
-
-这个仓库最适合按需安装单个接口 skill。先列出仓库里的 skill，再装你真正需要的那几个就可以。
-
-### 先看这个仓库里有哪些 skill
-
-```bash
-npx skills add AxT-Team/uapi-agent-skills --list
-```
-
-### 通过仓库名安装单个 skill
-
-```bash
-npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather
-```
-
-### 直接安装某个 skill 目录
-
-```bash
-npx skills add https://github.com/AxT-Team/uapi-agent-skills/tree/main/skills/uapi-get-misc-weather
-```
-
-### 一次安装多个 skill
-
-```bash
-npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather --skill uapi-post-search-aggregate --skill uapi-post-ai-translate
-```
-
-### 把这个仓库里的全部 skill 装到指定 agent
-
-```bash
-npx skills add AxT-Team/uapi-agent-skills --skill '*' -a codex
-```
-
-### 把这个仓库里的全部 skill 装到所有 agent
-
-```bash
-npx skills add AxT-Team/uapi-agent-skills --all
-```
-
-### 非交互安装示例
-
-```bash
-npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex -y
-```
-
-## 免费额度用完怎么办
-
-如果访客免费额度已经用完，并且返回了对应的状态码或错误提示，相关 skill 会提醒用户去 [uapis.cn](https://uapis.cn) 注册一个账号，然后创建免费的 UAPI Key，再带着自己的 Key 继续调用。
-
-## 分类速览
-
-当前一共分成 16 个分类。下面这一段先给出分类数量，后面再按分类展开全部接口。
-
-- `Misc`：15 个接口
-- `Image`：11 个接口
-- `Text`：11 个接口
-- `Network`：10 个接口
-- `Social`：8 个接口
-- `Game`：5 个接口
-- `Random`：4 个接口
-- `Translate`：4 个接口
-- `WebParse`：4 个接口
-- `Clipzy 在线剪贴板`：3 个接口
-- `敏感词识别`：3 个接口
-- `Convert`：2 个接口
-- `Status`：2 个接口
-- `智能搜索`：2 个接口
-- `Daily`：1 个接口
-- `Poem`：1 个接口
-
-## 分类与接口
-
-下面每个分类都用 `<details>` 展开。安装时直接把“安装名”带进 `--skill` 后面就可以。
+下面按分类展开全部接口。每个接口都直接附上可以复制的 Vercel Skills CLI 安装命令。
 
 ### Misc
 
 <details>
 <summary>展开查看 Misc 分类下的 15 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-get-misc-district` | Adcode 国内外行政区域查询 | `GET` | `/misc/district` | `get-misc-district` |
-| `uapi-get-misc-worldtime` | 查询世界时间 | `GET` | `/misc/worldtime` | `get-misc-worldtime` |
-| `uapi-get-misc-lunartime` | 查询农历时间 | `GET` | `/misc/lunartime` | `get-misc-lunartime` |
-| `uapi-get-misc-weather` | 查询天气 | `GET` | `/misc/weather` | `get-misc-weather` |
-| `uapi-get-misc-tracking-query` | 查询快递物流信息 | `GET` | `/misc/tracking/query` | `get-misc-tracking-query` |
-| `uapi-get-misc-phoneinfo` | 查询手机归属地 | `GET` | `/misc/phoneinfo` | `get-misc-phoneinfo` |
-| `uapi-get-misc-hotboard` | 查询热榜 | `GET` | `/misc/hotboard` | `get-misc-hotboard` |
-| `uapi-get-misc-holiday-calendar` | 查询节假日与万年历 | `GET` | `/misc/holiday-calendar` | `get-misc-holiday-calendar` |
-| `uapi-get-history-programmer-today` | 程序员历史上的今天 | `GET` | `/history/programmer/today` | `get-history-programmer-today` |
-| `uapi-get-history-programmer` | 程序员历史事件 | `GET` | `/history/programmer` | `get-history-programmer` |
-| `uapi-get-misc-tracking-carriers` | 获取支持的快递公司列表 | `GET` | `/misc/tracking/carriers` | `get-misc-tracking-carriers` |
-| `uapi-post-misc-date-diff` | 计算两个日期之间的时间差值 | `POST` | `/misc/date-diff` | `post-misc-date-diff` |
-| `uapi-get-misc-tracking-detect` | 识别快递公司 | `GET` | `/misc/tracking/detect` | `get-misc-tracking-detect` |
-| `uapi-get-misc-timestamp` | 转换时间戳 (旧版，推荐使用/convert/unixtime) | `GET` | `/misc/timestamp` | `get-misc-timestamp` |
-| `uapi-get-misc-randomnumber` | 随机数生成 | `GET` | `/misc/randomnumber` | `get-misc-randomnumber` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| Adcode 国内外行政区域查询 | `uapi-get-misc-district` | `GET /misc/district` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-district` |
+| 查询世界时间 | `uapi-get-misc-worldtime` | `GET /misc/worldtime` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-worldtime` |
+| 查询农历时间 | `uapi-get-misc-lunartime` | `GET /misc/lunartime` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-lunartime` |
+| 查询天气 | `uapi-get-misc-weather` | `GET /misc/weather` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather` |
+| 查询快递物流信息 | `uapi-get-misc-tracking-query` | `GET /misc/tracking/query` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-tracking-query` |
+| 查询手机归属地 | `uapi-get-misc-phoneinfo` | `GET /misc/phoneinfo` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-phoneinfo` |
+| 查询热榜 | `uapi-get-misc-hotboard` | `GET /misc/hotboard` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-hotboard` |
+| 查询节假日与万年历 | `uapi-get-misc-holiday-calendar` | `GET /misc/holiday-calendar` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-holiday-calendar` |
+| 程序员历史上的今天 | `uapi-get-history-programmer-today` | `GET /history/programmer/today` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-history-programmer-today` |
+| 程序员历史事件 | `uapi-get-history-programmer` | `GET /history/programmer` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-history-programmer` |
+| 获取支持的快递公司列表 | `uapi-get-misc-tracking-carriers` | `GET /misc/tracking/carriers` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-tracking-carriers` |
+| 计算两个日期之间的时间差值 | `uapi-post-misc-date-diff` | `POST /misc/date-diff` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-misc-date-diff` |
+| 识别快递公司 | `uapi-get-misc-tracking-detect` | `GET /misc/tracking/detect` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-tracking-detect` |
+| 转换时间戳 (旧版，推荐使用/convert/unixtime) | `uapi-get-misc-timestamp` | `GET /misc/timestamp` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-timestamp` |
+| 随机数生成 | `uapi-get-misc-randomnumber` | `GET /misc/randomnumber` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-randomnumber` |
 
 </details>
 
@@ -731,19 +568,19 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 Image 分类下的 11 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-post-image-svg` | SVG转图片 | `POST` | `/image/svg` | `post-image-svg` |
-| `uapi-post-image-nsfw` | 图片敏感检测 | `POST` | `/image/nsfw` | `post-image-nsfw` |
-| `uapi-get-image-tobase64` | 图片转 Base64 | `GET` | `/image/tobase64` | `get-image-tobase64` |
-| `uapi-get-image-bing-daily` | 必应壁纸 | `GET` | `/image/bing-daily` | `get-image-bing-daily` |
-| `uapi-post-image-compress` | 无损压缩图片 | `POST` | `/image/compress` | `post-image-compress` |
-| `uapi-get-image-qrcode` | 生成二维码 | `GET` | `/image/qrcode` | `get-image-qrcode` |
-| `uapi-post-image-speechless` | 生成你们怎么不说话了表情包 | `POST` | `/image/speechless` | `post-image-speechless` |
-| `uapi-post-image-motou` | 生成摸摸头GIF | `POST` | `/image/motou` | `post-image-motou` |
-| `uapi-get-image-motou` | 生成摸摸头GIF (QQ号) | `GET` | `/image/motou` | `get-image-motou` |
-| `uapi-get-avatar-gravatar` | 获取Gravatar头像 | `GET` | `/avatar/gravatar` | `get-avatar-gravatar` |
-| `uapi-post-image-frombase64` | 通过Base64编码上传图片 | `POST` | `/image/frombase64` | `post-image-frombase64` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| SVG转图片 | `uapi-post-image-svg` | `POST /image/svg` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-image-svg` |
+| 图片敏感检测 | `uapi-post-image-nsfw` | `POST /image/nsfw` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-image-nsfw` |
+| 图片转 Base64 | `uapi-get-image-tobase64` | `GET /image/tobase64` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-image-tobase64` |
+| 必应壁纸 | `uapi-get-image-bing-daily` | `GET /image/bing-daily` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-image-bing-daily` |
+| 无损压缩图片 | `uapi-post-image-compress` | `POST /image/compress` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-image-compress` |
+| 生成二维码 | `uapi-get-image-qrcode` | `GET /image/qrcode` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-image-qrcode` |
+| 生成你们怎么不说话了表情包 | `uapi-post-image-speechless` | `POST /image/speechless` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-image-speechless` |
+| 生成摸摸头GIF | `uapi-post-image-motou` | `POST /image/motou` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-image-motou` |
+| 生成摸摸头GIF (QQ号) | `uapi-get-image-motou` | `GET /image/motou` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-image-motou` |
+| 获取Gravatar头像 | `uapi-get-avatar-gravatar` | `GET /avatar/gravatar` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-avatar-gravatar` |
+| 通过Base64编码上传图片 | `uapi-post-image-frombase64` | `POST /image/frombase64` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-image-frombase64` |
 
 </details>
 
@@ -752,19 +589,19 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 Text 分类下的 11 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-post-text-aes-encrypt` | AES 加密 | `POST` | `/text/aes/encrypt` | `post-text-aes-encrypt` |
-| `uapi-post-text-aes-decrypt` | AES 解密 | `POST` | `/text/aes/decrypt` | `post-text-aes-decrypt` |
-| `uapi-post-text-aes-encrypt-advanced` | AES高级加密 | `POST` | `/text/aes/encrypt-advanced` | `post-text-aes-encrypt-advanced` |
-| `uapi-post-text-aes-decrypt-advanced` | AES高级解密 | `POST` | `/text/aes/decrypt-advanced` | `post-text-aes-decrypt-advanced` |
-| `uapi-post-text-base64-encode` | Base64 编码 | `POST` | `/text/base64/encode` | `post-text-base64-encode` |
-| `uapi-post-text-base64-decode` | Base64 解码 | `POST` | `/text/base64/decode` | `post-text-base64-decode` |
-| `uapi-get-text-md5` | MD5 哈希 | `GET` | `/text/md5` | `get-text-md5` |
-| `uapi-post-text-md5` | MD5 哈希 (POST) | `POST` | `/text/md5` | `post-text-md5` |
-| `uapi-post-text-md5-verify` | MD5 校验 | `POST` | `/text/md5/verify` | `post-text-md5-verify` |
-| `uapi-post-text-analyze` | 文本分析 | `POST` | `/text/analyze` | `post-text-analyze` |
-| `uapi-post-text-convert` | 格式转换 | `POST` | `/text/convert` | `post-text-convert` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| AES 加密 | `uapi-post-text-aes-encrypt` | `POST /text/aes/encrypt` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-text-aes-encrypt` |
+| AES 解密 | `uapi-post-text-aes-decrypt` | `POST /text/aes/decrypt` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-text-aes-decrypt` |
+| AES高级加密 | `uapi-post-text-aes-encrypt-advanced` | `POST /text/aes/encrypt-advanced` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-text-aes-encrypt-advanced` |
+| AES高级解密 | `uapi-post-text-aes-decrypt-advanced` | `POST /text/aes/decrypt-advanced` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-text-aes-decrypt-advanced` |
+| Base64 编码 | `uapi-post-text-base64-encode` | `POST /text/base64/encode` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-text-base64-encode` |
+| Base64 解码 | `uapi-post-text-base64-decode` | `POST /text/base64/decode` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-text-base64-decode` |
+| MD5 哈希 | `uapi-get-text-md5` | `GET /text/md5` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-text-md5` |
+| MD5 哈希 (POST) | `uapi-post-text-md5` | `POST /text/md5` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-text-md5` |
+| MD5 校验 | `uapi-post-text-md5-verify` | `POST /text/md5/verify` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-text-md5-verify` |
+| 文本分析 | `uapi-post-text-analyze` | `POST /text/analyze` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-text-analyze` |
+| 格式转换 | `uapi-post-text-convert` | `POST /text/convert` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-text-convert` |
 
 </details>
 
@@ -773,18 +610,18 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 Network 分类下的 10 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-get-network-ping` | Ping 主机 | `GET` | `/network/ping` | `get-network-ping` |
-| `uapi-get-network-pingmyip` | Ping 我的 IP | `GET` | `/network/pingmyip` | `get-network-pingmyip` |
-| `uapi-get-network-dns` | 执行DNS解析查询 | `GET` | `/network/dns` | `get-network-dns` |
-| `uapi-get-network-ipinfo` | 查询 IP | `GET` | `/network/ipinfo` | `get-network-ipinfo` |
-| `uapi-get-network-icp` | 查询域名ICP备案信息 | `GET` | `/network/icp` | `get-network-icp` |
-| `uapi-get-network-whois` | 查询域名的WHOIS注册信息 | `GET` | `/network/whois` | `get-network-whois` |
-| `uapi-get-network-myip` | 查询我的 IP | `GET` | `/network/myip` | `get-network-myip` |
-| `uapi-get-network-urlstatus` | 检查URL的可访问性状态 | `GET` | `/network/urlstatus` | `get-network-urlstatus` |
-| `uapi-get-network-wxdomain` | 检查域名在微信中的访问状态 | `GET` | `/network/wxdomain` | `get-network-wxdomain` |
-| `uapi-get-network-portscan` | 端口扫描 | `GET` | `/network/portscan` | `get-network-portscan` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| Ping 主机 | `uapi-get-network-ping` | `GET /network/ping` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-network-ping` |
+| Ping 我的 IP | `uapi-get-network-pingmyip` | `GET /network/pingmyip` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-network-pingmyip` |
+| 执行DNS解析查询 | `uapi-get-network-dns` | `GET /network/dns` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-network-dns` |
+| 查询 IP | `uapi-get-network-ipinfo` | `GET /network/ipinfo` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-network-ipinfo` |
+| 查询域名ICP备案信息 | `uapi-get-network-icp` | `GET /network/icp` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-network-icp` |
+| 查询域名的WHOIS注册信息 | `uapi-get-network-whois` | `GET /network/whois` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-network-whois` |
+| 查询我的 IP | `uapi-get-network-myip` | `GET /network/myip` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-network-myip` |
+| 检查URL的可访问性状态 | `uapi-get-network-urlstatus` | `GET /network/urlstatus` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-network-urlstatus` |
+| 检查域名在微信中的访问状态 | `uapi-get-network-wxdomain` | `GET /network/wxdomain` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-network-wxdomain` |
+| 端口扫描 | `uapi-get-network-portscan` | `GET /network/portscan` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-network-portscan` |
 
 </details>
 
@@ -793,16 +630,16 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 Social 分类下的 8 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-get-social-bilibili-archives` | 查询 B站投稿 | `GET` | `/social/bilibili/archives` | `get-social-bilibili-archives` |
-| `uapi-get-social-bilibili-userinfo` | 查询 B站用户 | `GET` | `/social/bilibili/userinfo` | `get-social-bilibili-userinfo` |
-| `uapi-get-social-bilibili-liveroom` | 查询 B站直播间 | `GET` | `/social/bilibili/liveroom` | `get-social-bilibili-liveroom` |
-| `uapi-get-social-bilibili-videoinfo` | 查询 B站视频 | `GET` | `/social/bilibili/videoinfo` | `get-social-bilibili-videoinfo` |
-| `uapi-get-social-bilibili-replies` | 查询 B站评论 | `GET` | `/social/bilibili/replies` | `get-social-bilibili-replies` |
-| `uapi-get-github-repo` | 查询 GitHub 仓库 | `GET` | `/github/repo` | `get-github-repo` |
-| `uapi-get-social-qq-userinfo` | 查询 QQ 信息 | `GET` | `/social/qq/userinfo` | `get-social-qq-userinfo` |
-| `uapi-get-social-qq-groupinfo` | 查询 QQ 群信息 | `GET` | `/social/qq/groupinfo` | `get-social-qq-groupinfo` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| 查询 B站投稿 | `uapi-get-social-bilibili-archives` | `GET /social/bilibili/archives` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-social-bilibili-archives` |
+| 查询 B站用户 | `uapi-get-social-bilibili-userinfo` | `GET /social/bilibili/userinfo` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-social-bilibili-userinfo` |
+| 查询 B站直播间 | `uapi-get-social-bilibili-liveroom` | `GET /social/bilibili/liveroom` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-social-bilibili-liveroom` |
+| 查询 B站视频 | `uapi-get-social-bilibili-videoinfo` | `GET /social/bilibili/videoinfo` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-social-bilibili-videoinfo` |
+| 查询 B站评论 | `uapi-get-social-bilibili-replies` | `GET /social/bilibili/replies` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-social-bilibili-replies` |
+| 查询 GitHub 仓库 | `uapi-get-github-repo` | `GET /github/repo` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-github-repo` |
+| 查询 QQ 信息 | `uapi-get-social-qq-userinfo` | `GET /social/qq/userinfo` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-social-qq-userinfo` |
+| 查询 QQ 群信息 | `uapi-get-social-qq-groupinfo` | `GET /social/qq/groupinfo` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-social-qq-groupinfo` |
 
 </details>
 
@@ -811,13 +648,13 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 Game 分类下的 5 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-get-game-epic-free` | Epic 免费游戏 | `GET` | `/game/epic-free` | `get-game-epic-free` |
-| `uapi-get-game-minecraft-historyid` | 查询 MC 曾用名 | `GET` | `/game/minecraft/historyid` | `get-game-minecraft-historyid` |
-| `uapi-get-game-minecraft-serverstatus` | 查询 MC 服务器 | `GET` | `/game/minecraft/serverstatus` | `get-game-minecraft-serverstatus` |
-| `uapi-get-game-minecraft-userinfo` | 查询 MC 玩家 | `GET` | `/game/minecraft/userinfo` | `get-game-minecraft-userinfo` |
-| `uapi-get-game-steam-summary` | 查询 Steam 用户 | `GET` | `/game/steam/summary` | `get-game-steam-summary` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| Epic 免费游戏 | `uapi-get-game-epic-free` | `GET /game/epic-free` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-game-epic-free` |
+| 查询 MC 曾用名 | `uapi-get-game-minecraft-historyid` | `GET /game/minecraft/historyid` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-game-minecraft-historyid` |
+| 查询 MC 服务器 | `uapi-get-game-minecraft-serverstatus` | `GET /game/minecraft/serverstatus` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-game-minecraft-serverstatus` |
+| 查询 MC 玩家 | `uapi-get-game-minecraft-userinfo` | `GET /game/minecraft/userinfo` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-game-minecraft-userinfo` |
+| 查询 Steam 用户 | `uapi-get-game-steam-summary` | `GET /game/steam/summary` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-game-steam-summary` |
 
 </details>
 
@@ -826,12 +663,12 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 Random 分类下的 4 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-get-answerbook-ask` | 答案之书 | `GET` | `/answerbook/ask` | `get-answerbook-ask` |
-| `uapi-post-answerbook-ask` | 答案之书 (POST) | `POST` | `/answerbook/ask` | `post-answerbook-ask` |
-| `uapi-get-random-image` | 随机图片 | `GET` | `/random/image` | `get-random-image` |
-| `uapi-get-random-string` | 随机字符串 | `GET` | `/random/string` | `get-random-string` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| 答案之书 | `uapi-get-answerbook-ask` | `GET /answerbook/ask` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-answerbook-ask` |
+| 答案之书 (POST) | `uapi-post-answerbook-ask` | `POST /answerbook/ask` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-answerbook-ask` |
+| 随机图片 | `uapi-get-random-image` | `GET /random/image` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-random-image` |
+| 随机字符串 | `uapi-get-random-string` | `GET /random/string` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-random-string` |
 
 </details>
 
@@ -840,12 +677,12 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 Translate 分类下的 4 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-post-ai-translate` | AI智能翻译 | `POST` | `/ai/translate` | `post-ai-translate` |
-| `uapi-get-ai-translate-languages` | AI翻译配置 | `GET` | `/ai/translate/languages` | `get-ai-translate-languages` |
-| `uapi-post-translate-stream` | 流式翻译（中英互译） | `POST` | `/translate/stream` | `post-translate-stream` |
-| `uapi-post-translate-text` | 翻译 | `POST` | `/translate/text` | `post-translate-text` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| AI智能翻译 | `uapi-post-ai-translate` | `POST /ai/translate` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-ai-translate` |
+| AI翻译配置 | `uapi-get-ai-translate-languages` | `GET /ai/translate/languages` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-ai-translate-languages` |
+| 流式翻译（中英互译） | `uapi-post-translate-stream` | `POST /translate/stream` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-translate-stream` |
+| 翻译 | `uapi-post-translate-text` | `POST /translate/text` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-translate-text` |
 
 </details>
 
@@ -854,12 +691,12 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 WebParse 分类下的 4 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-get-webparse-metadata` | 提取网页元数据 | `GET` | `/webparse/metadata` | `get-webparse-metadata` |
-| `uapi-get-webparse-extractimages` | 提取网页图片 | `GET` | `/webparse/extractimages` | `get-webparse-extractimages` |
-| `uapi-post-web-tomarkdown-async` | 网页转 Markdown | `POST` | `/web/tomarkdown/async` | `post-web-tomarkdown-async` |
-| `uapi-get-web-tomarkdown-async-status` | 转换任务状态 | `GET` | `/web/tomarkdown/async/{task_id}` | `get-web-tomarkdown-async-status` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| 提取网页元数据 | `uapi-get-webparse-metadata` | `GET /webparse/metadata` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-webparse-metadata` |
+| 提取网页图片 | `uapi-get-webparse-extractimages` | `GET /webparse/extractimages` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-webparse-extractimages` |
+| 网页转 Markdown | `uapi-post-web-tomarkdown-async` | `POST /web/tomarkdown/async` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-web-tomarkdown-async` |
+| 转换任务状态 | `uapi-get-web-tomarkdown-async-status` | `GET /web/tomarkdown/async/{task_id}` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-web-tomarkdown-async-status` |
 
 </details>
 
@@ -868,11 +705,11 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 Clipzy 在线剪贴板 分类下的 3 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-post-clipzy-store` | 步骤1：上传加密数据 | `POST` | `/api/store` | `post-clipzy-store` |
-| `uapi-get-clipzy-get` | 步骤2 (方法一): 获取加密数据 | `GET` | `/api/get` | `get-clipzy-get` |
-| `uapi-get-clipzy-raw` | 步骤2 (方法二): 获取原始文本 | `GET` | `/api/raw/{id}` | `get-clipzy-raw` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| 步骤1：上传加密数据 | `uapi-post-clipzy-store` | `POST /api/store` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-clipzy-store` |
+| 步骤2 (方法一): 获取加密数据 | `uapi-get-clipzy-get` | `GET /api/get` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-clipzy-get` |
+| 步骤2 (方法二): 获取原始文本 | `uapi-get-clipzy-raw` | `GET /api/raw/{id}` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-clipzy-raw` |
 
 </details>
 
@@ -881,11 +718,11 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 敏感词识别 分类下的 3 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-post-sensitive-word-analyze` | 分析敏感词 | `POST` | `/sensitive-word/analyze` | `post-sensitive-word-analyze` |
-| `uapi-get-sensitive-word-analyze-query` | 敏感词分析 (GET) | `GET` | `/sensitive-word/analyze-query` | `get-sensitive-word-analyze-query` |
-| `uapi-post-sensitive-word-quick-check` | 敏感词检测（快速） | `POST` | `/text/profanitycheck` | `post-sensitive-word-quick-check` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| 分析敏感词 | `uapi-post-sensitive-word-analyze` | `POST /sensitive-word/analyze` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-sensitive-word-analyze` |
+| 敏感词分析 (GET) | `uapi-get-sensitive-word-analyze-query` | `GET /sensitive-word/analyze-query` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-sensitive-word-analyze-query` |
+| 敏感词检测（快速） | `uapi-post-sensitive-word-quick-check` | `POST /text/profanitycheck` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-sensitive-word-quick-check` |
 
 </details>
 
@@ -894,10 +731,10 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 Convert 分类下的 2 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-post-convert-json` | JSON 格式化 | `POST` | `/convert/json` | `post-convert-json` |
-| `uapi-get-convert-unixtime` | 时间戳转换 | `GET` | `/convert/unixtime` | `get-convert-unixtime` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| JSON 格式化 | `uapi-post-convert-json` | `POST /convert/json` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-convert-json` |
+| 时间戳转换 | `uapi-get-convert-unixtime` | `GET /convert/unixtime` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-convert-unixtime` |
 
 </details>
 
@@ -906,10 +743,10 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 Status 分类下的 2 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-get-status-usage` | 获取API端点使用统计 | `GET` | `/status/usage` | `get-status-usage` |
-| `uapi-get-status-ratelimit` | 限流状态 | `GET` | `/status/ratelimit` | `get-status-ratelimit` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| 获取API端点使用统计 | `uapi-get-status-usage` | `GET /status/usage` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-status-usage` |
+| 限流状态 | `uapi-get-status-ratelimit` | `GET /status/ratelimit` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-status-ratelimit` |
 
 </details>
 
@@ -918,10 +755,10 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 智能搜索 分类下的 2 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-get-search-engines` | 搜索引擎配置 | `GET` | `/search/engines` | `get-search-engines` |
-| `uapi-post-search-aggregate` | 智能搜索 | `POST` | `/search/aggregate` | `post-search-aggregate` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| 搜索引擎配置 | `uapi-get-search-engines` | `GET /search/engines` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-search-engines` |
+| 智能搜索 | `uapi-post-search-aggregate` | `POST /search/aggregate` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-post-search-aggregate` |
 
 </details>
 
@@ -930,9 +767,9 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 Daily 分类下的 1 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-get-daily-news-image` | 每日新闻图 | `GET` | `/daily/news-image` | `get-daily-news-image` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| 每日新闻图 | `uapi-get-daily-news-image` | `GET /daily/news-image` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-daily-news-image` |
 
 </details>
 
@@ -941,16 +778,8 @@ npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-misc-weather -a codex
 <details>
 <summary>展开查看 Poem 分类下的 1 个接口</summary>
 
-| 安装名 | 接口说明 | Method | Path | Operation ID |
-| --- | --- | --- | --- | --- |
-| `uapi-get-saying` | 一言 | `GET` | `/saying` | `get-saying` |
+| 接口说明 | Skill | 接口 | 安装命令 |
+| --- | --- | --- | --- |
+| 一言 | `uapi-get-saying` | `GET /saying` | `npx skills add AxT-Team/uapi-agent-skills --skill uapi-get-saying` |
 
 </details>
-
-## 重新生成 README
-
-这个 README 是脚本生成的。如果 `skills/_manifest.json` 有变动，可以直接运行下面这条命令重新生成：
-
-```bash
-python scripts/generate_readme.py
-```
