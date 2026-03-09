@@ -1,0 +1,6 @@
+interface:
+  display_name: "UAPI MD5 哈希 接口"
+  short_description: "使用 UAPI 的MD5 哈希接口，并说明参数、调用方式和返回码"
+  default_prompt: "使用 $uapi-get-text-md5 直接调用 GET /text/md5，并先确认必填参数、默认值和生效条件。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,1799 @@
+{
+  "generated_by": "tools/uapi_skill_builder.py",
+  "generation_mode": "per_operation",
+  "source_spec": "uapi-mcp/.speakeasy/out.openapi.yaml",
+  "output_dir": "skills",
+  "skill_count": 86,
+  "skills": [
+    {
+      "skill_name": "uapi-get-clipzy-get",
+      "operation_id": "get-clipzy-get",
+      "summary": "步骤2 (方法一): 获取加密数据",
+      "method": "GET",
+      "path": "/api/get",
+      "tag": "Clipzy 在线剪贴板",
+      "display_name": "UAPI 步骤2 (方法一): 获取加密数据 接口",
+      "keywords_zh": [
+        "步骤2 (方法一): 获取加密数据",
+        "加密剪贴板",
+        "端到端加密文本",
+        "加密分享"
+      ],
+      "keywords_en": [
+        "get clipzy get",
+        "api get",
+        "get",
+        "clipzy"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-clipzy-raw",
+      "operation_id": "get-clipzy-raw",
+      "summary": "步骤2 (方法二): 获取原始文本",
+      "method": "GET",
+      "path": "/api/raw/{id}",
+      "tag": "Clipzy 在线剪贴板",
+      "display_name": "UAPI 步骤2 (方法二): 获取原始文本 接口",
+      "keywords_zh": [
+        "步骤2 (方法二): 获取原始文本",
+        "读取明文",
+        "解密文本",
+        "按key取原文",
+        "端到端加密文本"
+      ],
+      "keywords_en": [
+        "get clipzy raw",
+        "api raw",
+        "raw",
+        "read raw text",
+        "decrypt clipzy text",
+        "clipzy raw endpoint",
+        "clipzy"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-clipzy-store",
+      "operation_id": "post-clipzy-store",
+      "summary": "步骤1：上传加密数据",
+      "method": "POST",
+      "path": "/api/store",
+      "tag": "Clipzy 在线剪贴板",
+      "display_name": "UAPI 步骤1：上传加密数据 接口",
+      "keywords_zh": [
+        "步骤1：上传加密数据",
+        "加密剪贴板",
+        "端到端加密文本",
+        "加密分享"
+      ],
+      "keywords_en": [
+        "post clipzy store",
+        "api store",
+        "store",
+        "clipzy"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-convert-json",
+      "operation_id": "post-convert-json",
+      "summary": "JSON 格式化",
+      "method": "POST",
+      "path": "/convert/json",
+      "tag": "Convert",
+      "display_name": "UAPI JSON 格式化 接口",
+      "keywords_zh": [
+        "JSON 格式化",
+        "JSON格式化"
+      ],
+      "keywords_en": [
+        "post convert json",
+        "convert json",
+        "json",
+        "json formatter",
+        "json prettify",
+        "json minify"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-convert-unixtime",
+      "operation_id": "get-convert-unixtime",
+      "summary": "时间戳转换",
+      "method": "GET",
+      "path": "/convert/unixtime",
+      "tag": "Convert",
+      "display_name": "UAPI 时间戳转换 接口",
+      "keywords_zh": [
+        "时间戳转换",
+        "Unix时间戳",
+        "日期转时间戳"
+      ],
+      "keywords_en": [
+        "get convert unixtime",
+        "convert unixtime",
+        "unixtime"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-daily-news-image",
+      "operation_id": "get-daily-news-image",
+      "summary": "每日新闻图",
+      "method": "GET",
+      "path": "/daily/news-image",
+      "tag": "Daily",
+      "display_name": "UAPI 每日新闻图 接口",
+      "keywords_zh": [
+        "每日新闻图",
+        "新闻海报",
+        "每日内容"
+      ],
+      "keywords_en": [
+        "get daily news image",
+        "daily news-image",
+        "news-image",
+        "daily news image",
+        "daily digest",
+        "news poster"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-game-epic-free",
+      "operation_id": "get-game-epic-free",
+      "summary": "Epic 免费游戏",
+      "method": "GET",
+      "path": "/game/epic-free",
+      "tag": "Game",
+      "display_name": "UAPI Epic 免费游戏 接口",
+      "keywords_zh": [
+        "Epic 免费游戏",
+        "Epic免费游戏",
+        "游戏资料"
+      ],
+      "keywords_en": [
+        "get game epic free",
+        "game epic-free",
+        "epic-free",
+        "epic free games"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-game-minecraft-historyid",
+      "operation_id": "get-game-minecraft-historyid",
+      "summary": "查询 MC 曾用名",
+      "method": "GET",
+      "path": "/game/minecraft/historyid",
+      "tag": "Game",
+      "display_name": "UAPI 查询 MC 曾用名 接口",
+      "keywords_zh": [
+        "查询 MC 曾用名",
+        "MC曾用名"
+      ],
+      "keywords_en": [
+        "get game minecraft historyid",
+        "game minecraft historyid",
+        "historyid",
+        "minecraft player lookup",
+        "minecraft server status",
+        "minecraft name history"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-game-minecraft-serverstatus",
+      "operation_id": "get-game-minecraft-serverstatus",
+      "summary": "查询 MC 服务器",
+      "method": "GET",
+      "path": "/game/minecraft/serverstatus",
+      "tag": "Game",
+      "display_name": "UAPI 查询 MC 服务器 接口",
+      "keywords_zh": [
+        "查询 MC 服务器",
+        "MC服务器状态"
+      ],
+      "keywords_en": [
+        "get game minecraft serverstatus",
+        "game minecraft serverstatus",
+        "serverstatus",
+        "minecraft player lookup",
+        "minecraft server status",
+        "minecraft name history"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-game-minecraft-userinfo",
+      "operation_id": "get-game-minecraft-userinfo",
+      "summary": "查询 MC 玩家",
+      "method": "GET",
+      "path": "/game/minecraft/userinfo",
+      "tag": "Game",
+      "display_name": "UAPI 查询 MC 玩家 接口",
+      "keywords_zh": [
+        "查询 MC 玩家",
+        "Minecraft玩家查询"
+      ],
+      "keywords_en": [
+        "get game minecraft userinfo",
+        "game minecraft userinfo",
+        "userinfo",
+        "minecraft player lookup",
+        "minecraft server status",
+        "minecraft name history"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-game-steam-summary",
+      "operation_id": "get-game-steam-summary",
+      "summary": "查询 Steam 用户",
+      "method": "GET",
+      "path": "/game/steam/summary",
+      "tag": "Game",
+      "display_name": "UAPI 查询 Steam 用户 接口",
+      "keywords_zh": [
+        "查询 Steam 用户",
+        "Steam资料",
+        "Steam主页",
+        "Steam玩家",
+        "Steam用户信息"
+      ],
+      "keywords_en": [
+        "get game steam summary",
+        "game steam summary",
+        "summary",
+        "steam user",
+        "steam profile",
+        "steam account lookup",
+        "steam profile summary"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-avatar-gravatar",
+      "operation_id": "get-avatar-gravatar",
+      "summary": "获取Gravatar头像",
+      "method": "GET",
+      "path": "/avatar/gravatar",
+      "tag": "Image",
+      "display_name": "UAPI 获取Gravatar头像 接口",
+      "keywords_zh": [
+        "获取Gravatar头像",
+        "头像获取"
+      ],
+      "keywords_en": [
+        "get avatar gravatar",
+        "avatar gravatar",
+        "gravatar",
+        "avatar lookup"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-image-bing-daily",
+      "operation_id": "get-image-bing-daily",
+      "summary": "必应壁纸",
+      "method": "GET",
+      "path": "/image/bing-daily",
+      "tag": "Image",
+      "display_name": "UAPI 必应壁纸 接口",
+      "keywords_zh": [
+        "必应壁纸"
+      ],
+      "keywords_en": [
+        "get image bing daily",
+        "image bing-daily",
+        "bing-daily",
+        "image compression",
+        "image to base64",
+        "base64 to image",
+        "svg to image",
+        "nsfw image detection"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-image-compress",
+      "operation_id": "post-image-compress",
+      "summary": "无损压缩图片",
+      "method": "POST",
+      "path": "/image/compress",
+      "tag": "Image",
+      "display_name": "UAPI 无损压缩图片 接口",
+      "keywords_zh": [
+        "无损压缩图片",
+        "图片压缩",
+        "图片转Base64",
+        "Base64转图片",
+        "图片敏感检测"
+      ],
+      "keywords_en": [
+        "post image compress",
+        "image compress",
+        "compress",
+        "image compression",
+        "image to base64",
+        "base64 to image",
+        "svg to image",
+        "nsfw image detection"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-image-frombase64",
+      "operation_id": "post-image-frombase64",
+      "summary": "通过Base64编码上传图片",
+      "method": "POST",
+      "path": "/image/frombase64",
+      "tag": "Image",
+      "display_name": "UAPI 通过Base64编码上传图片 接口",
+      "keywords_zh": [
+        "通过Base64编码上传图片",
+        "图片压缩",
+        "图片转Base64",
+        "Base64转图片",
+        "图片敏感检测"
+      ],
+      "keywords_en": [
+        "post image frombase64",
+        "image frombase64",
+        "frombase64",
+        "image compression",
+        "image to base64",
+        "base64 to image",
+        "svg to image",
+        "nsfw image detection"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-image-motou",
+      "operation_id": "get-image-motou",
+      "summary": "生成摸摸头GIF (QQ号)",
+      "method": "GET",
+      "path": "/image/motou",
+      "tag": "Image",
+      "display_name": "UAPI 生成摸摸头GIF (QQ号) 接口",
+      "keywords_zh": [
+        "生成摸摸头GIF (QQ号)"
+      ],
+      "keywords_en": [
+        "get image motou",
+        "image motou",
+        "motou",
+        "image compression",
+        "image to base64",
+        "base64 to image",
+        "svg to image",
+        "nsfw image detection"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-image-motou",
+      "operation_id": "post-image-motou",
+      "summary": "生成摸摸头GIF",
+      "method": "POST",
+      "path": "/image/motou",
+      "tag": "Image",
+      "display_name": "UAPI 生成摸摸头GIF 接口",
+      "keywords_zh": [
+        "生成摸摸头GIF"
+      ],
+      "keywords_en": [
+        "post image motou",
+        "image motou",
+        "motou",
+        "image compression",
+        "image to base64",
+        "base64 to image",
+        "svg to image",
+        "nsfw image detection"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-image-nsfw",
+      "operation_id": "post-image-nsfw",
+      "summary": "图片敏感检测",
+      "method": "POST",
+      "path": "/image/nsfw",
+      "tag": "Image",
+      "display_name": "UAPI 图片敏感检测 接口",
+      "keywords_zh": [
+        "图片敏感检测",
+        "图片压缩",
+        "图片转Base64",
+        "Base64转图片"
+      ],
+      "keywords_en": [
+        "post image nsfw",
+        "image nsfw",
+        "nsfw",
+        "image compression",
+        "image to base64",
+        "base64 to image",
+        "svg to image",
+        "nsfw image detection"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-image-qrcode",
+      "operation_id": "get-image-qrcode",
+      "summary": "生成二维码",
+      "method": "GET",
+      "path": "/image/qrcode",
+      "tag": "Image",
+      "display_name": "UAPI 生成二维码 接口",
+      "keywords_zh": [
+        "生成二维码",
+        "二维码生成"
+      ],
+      "keywords_en": [
+        "get image qrcode",
+        "image qrcode",
+        "qrcode",
+        "image compression",
+        "image to base64",
+        "base64 to image",
+        "svg to image",
+        "nsfw image detection"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-image-speechless",
+      "operation_id": "post-image-speechless",
+      "summary": "生成你们怎么不说话了表情包",
+      "method": "POST",
+      "path": "/image/speechless",
+      "tag": "Image",
+      "display_name": "UAPI 生成你们怎么不说话了表情包 接口",
+      "keywords_zh": [
+        "生成你们怎么不说话了表情包",
+        "表情包生成"
+      ],
+      "keywords_en": [
+        "post image speechless",
+        "image speechless",
+        "speechless",
+        "image compression",
+        "image to base64",
+        "base64 to image",
+        "svg to image",
+        "nsfw image detection"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-image-svg",
+      "operation_id": "post-image-svg",
+      "summary": "SVG转图片",
+      "method": "POST",
+      "path": "/image/svg",
+      "tag": "Image",
+      "display_name": "UAPI SVG转图片 接口",
+      "keywords_zh": [
+        "SVG转图片",
+        "图片压缩",
+        "图片转Base64",
+        "Base64转图片",
+        "图片敏感检测"
+      ],
+      "keywords_en": [
+        "post image svg",
+        "image svg",
+        "svg",
+        "image compression",
+        "image to base64",
+        "base64 to image",
+        "svg to image",
+        "nsfw image detection"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-image-tobase64",
+      "operation_id": "get-image-tobase64",
+      "summary": "图片转 Base64",
+      "method": "GET",
+      "path": "/image/tobase64",
+      "tag": "Image",
+      "display_name": "UAPI 图片转 Base64 接口",
+      "keywords_zh": [
+        "图片转 Base64",
+        "图片压缩",
+        "图片转Base64",
+        "Base64转图片",
+        "图片敏感检测"
+      ],
+      "keywords_en": [
+        "get image tobase64",
+        "image tobase64",
+        "tobase64",
+        "image compression",
+        "image to base64",
+        "base64 to image",
+        "svg to image",
+        "nsfw image detection"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-history-programmer",
+      "operation_id": "get-history-programmer",
+      "summary": "程序员历史事件",
+      "method": "GET",
+      "path": "/history/programmer",
+      "tag": "Misc",
+      "display_name": "UAPI 程序员历史事件 接口",
+      "keywords_zh": [
+        "程序员历史事件"
+      ],
+      "keywords_en": [
+        "get history programmer",
+        "history programmer",
+        "programmer"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-history-programmer-today",
+      "operation_id": "get-history-programmer-today",
+      "summary": "程序员历史上的今天",
+      "method": "GET",
+      "path": "/history/programmer/today",
+      "tag": "Misc",
+      "display_name": "UAPI 程序员历史上的今天 接口",
+      "keywords_zh": [
+        "程序员历史上的今天"
+      ],
+      "keywords_en": [
+        "get history programmer today",
+        "history programmer today",
+        "today"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-misc-date-diff",
+      "operation_id": "post-misc-date-diff",
+      "summary": "计算两个日期之间的时间差值",
+      "method": "POST",
+      "path": "/misc/date-diff",
+      "tag": "Misc",
+      "display_name": "UAPI 计算两个日期之间的时间差值 接口",
+      "keywords_zh": [
+        "计算两个日期之间的时间差值",
+        "世界时间"
+      ],
+      "keywords_en": [
+        "post misc date diff",
+        "misc date-diff",
+        "date-diff"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-misc-district",
+      "operation_id": "get-misc-district",
+      "summary": "Adcode 国内外行政区域查询",
+      "method": "GET",
+      "path": "/misc/district",
+      "tag": "Misc",
+      "display_name": "UAPI Adcode 国内外行政区域查询 接口",
+      "keywords_zh": [
+        "Adcode 国内外行政区域查询",
+        "行政区查询"
+      ],
+      "keywords_en": [
+        "get misc district",
+        "misc district",
+        "district",
+        "district lookup"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-misc-holiday-calendar",
+      "operation_id": "get-misc-holiday-calendar",
+      "summary": "查询节假日与万年历",
+      "method": "GET",
+      "path": "/misc/holiday-calendar",
+      "tag": "Misc",
+      "display_name": "UAPI 查询节假日与万年历 接口",
+      "keywords_zh": [
+        "查询节假日与万年历",
+        "节假日"
+      ],
+      "keywords_en": [
+        "get misc holiday calendar",
+        "misc holiday-calendar",
+        "holiday-calendar",
+        "holiday calendar",
+        "lunar calendar"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-misc-hotboard",
+      "operation_id": "get-misc-hotboard",
+      "summary": "查询热榜",
+      "method": "GET",
+      "path": "/misc/hotboard",
+      "tag": "Misc",
+      "display_name": "UAPI 查询热榜 接口",
+      "keywords_zh": [
+        "查询热榜",
+        "热榜"
+      ],
+      "keywords_en": [
+        "get misc hotboard",
+        "misc hotboard",
+        "hotboard"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-misc-lunartime",
+      "operation_id": "get-misc-lunartime",
+      "summary": "查询农历时间",
+      "method": "GET",
+      "path": "/misc/lunartime",
+      "tag": "Misc",
+      "display_name": "UAPI 查询农历时间 接口",
+      "keywords_zh": [
+        "查询农历时间",
+        "世界时间",
+        "农历"
+      ],
+      "keywords_en": [
+        "get misc lunartime",
+        "misc lunartime",
+        "lunartime"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-misc-phoneinfo",
+      "operation_id": "get-misc-phoneinfo",
+      "summary": "查询手机归属地",
+      "method": "GET",
+      "path": "/misc/phoneinfo",
+      "tag": "Misc",
+      "display_name": "UAPI 查询手机归属地 接口",
+      "keywords_zh": [
+        "查询手机归属地",
+        "手机号归属地"
+      ],
+      "keywords_en": [
+        "get misc phoneinfo",
+        "misc phoneinfo",
+        "phoneinfo"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-misc-randomnumber",
+      "operation_id": "get-misc-randomnumber",
+      "summary": "随机数生成",
+      "method": "GET",
+      "path": "/misc/randomnumber",
+      "tag": "Misc",
+      "display_name": "UAPI 随机数生成 接口",
+      "keywords_zh": [
+        "随机数生成"
+      ],
+      "keywords_en": [
+        "get misc randomnumber",
+        "misc randomnumber",
+        "randomnumber"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-misc-timestamp",
+      "operation_id": "get-misc-timestamp",
+      "summary": "转换时间戳 (旧版，推荐使用/convert/unixtime)",
+      "method": "GET",
+      "path": "/misc/timestamp",
+      "tag": "Misc",
+      "display_name": "UAPI 转换时间戳 (旧版，推荐使用/convert/unixtime) 接口",
+      "keywords_zh": [
+        "转换时间戳 (旧版，推荐使用/convert/unixtime)",
+        "世界时间"
+      ],
+      "keywords_en": [
+        "get misc timestamp",
+        "misc timestamp",
+        "timestamp"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-misc-tracking-carriers",
+      "operation_id": "get-misc-tracking-carriers",
+      "summary": "获取支持的快递公司列表",
+      "method": "GET",
+      "path": "/misc/tracking/carriers",
+      "tag": "Misc",
+      "display_name": "UAPI 获取支持的快递公司列表 接口",
+      "keywords_zh": [
+        "获取支持的快递公司列表",
+        "快递物流"
+      ],
+      "keywords_en": [
+        "get misc tracking carriers",
+        "misc tracking carriers",
+        "carriers",
+        "package tracking"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-misc-tracking-detect",
+      "operation_id": "get-misc-tracking-detect",
+      "summary": "识别快递公司",
+      "method": "GET",
+      "path": "/misc/tracking/detect",
+      "tag": "Misc",
+      "display_name": "UAPI 识别快递公司 接口",
+      "keywords_zh": [
+        "识别快递公司",
+        "快递物流"
+      ],
+      "keywords_en": [
+        "get misc tracking detect",
+        "misc tracking detect",
+        "detect",
+        "package tracking"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-misc-tracking-query",
+      "operation_id": "get-misc-tracking-query",
+      "summary": "查询快递物流信息",
+      "method": "GET",
+      "path": "/misc/tracking/query",
+      "tag": "Misc",
+      "display_name": "UAPI 查询快递物流信息 接口",
+      "keywords_zh": [
+        "查询快递物流信息",
+        "快递物流"
+      ],
+      "keywords_en": [
+        "get misc tracking query",
+        "misc tracking query",
+        "query",
+        "package tracking"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-misc-weather",
+      "operation_id": "get-misc-weather",
+      "summary": "查询天气",
+      "method": "GET",
+      "path": "/misc/weather",
+      "tag": "Misc",
+      "display_name": "UAPI 查询天气 接口",
+      "keywords_zh": [
+        "查询天气",
+        "天气预报",
+        "城市天气",
+        "adcode天气",
+        "实时天气",
+        "天气查询"
+      ],
+      "keywords_en": [
+        "get misc weather",
+        "misc weather",
+        "weather",
+        "weather api",
+        "city weather",
+        "forecast lookup",
+        "adcode weather",
+        "weather forecast"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-misc-worldtime",
+      "operation_id": "get-misc-worldtime",
+      "summary": "查询世界时间",
+      "method": "GET",
+      "path": "/misc/worldtime",
+      "tag": "Misc",
+      "display_name": "UAPI 查询世界时间 接口",
+      "keywords_zh": [
+        "查询世界时间",
+        "世界时间"
+      ],
+      "keywords_en": [
+        "get misc worldtime",
+        "misc worldtime",
+        "worldtime"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-network-dns",
+      "operation_id": "get-network-dns",
+      "summary": "执行DNS解析查询",
+      "method": "GET",
+      "path": "/network/dns",
+      "tag": "Network",
+      "display_name": "UAPI 执行DNS解析查询 接口",
+      "keywords_zh": [
+        "执行DNS解析查询"
+      ],
+      "keywords_en": [
+        "get network dns",
+        "network dns",
+        "dns",
+        "dns lookup"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-network-icp",
+      "operation_id": "get-network-icp",
+      "summary": "查询域名ICP备案信息",
+      "method": "GET",
+      "path": "/network/icp",
+      "tag": "Network",
+      "display_name": "UAPI 查询域名ICP备案信息 接口",
+      "keywords_zh": [
+        "查询域名ICP备案信息",
+        "ICP备案",
+        "微信域名检测"
+      ],
+      "keywords_en": [
+        "get network icp",
+        "network icp",
+        "icp",
+        "icp lookup"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-network-ipinfo",
+      "operation_id": "get-network-ipinfo",
+      "summary": "查询 IP",
+      "method": "GET",
+      "path": "/network/ipinfo",
+      "tag": "Network",
+      "display_name": "UAPI 查询 IP 接口",
+      "keywords_zh": [
+        "查询 IP",
+        "DNS查询",
+        "IP查询"
+      ],
+      "keywords_en": [
+        "get network ipinfo",
+        "network ipinfo",
+        "ipinfo"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-network-myip",
+      "operation_id": "get-network-myip",
+      "summary": "查询我的 IP",
+      "method": "GET",
+      "path": "/network/myip",
+      "tag": "Network",
+      "display_name": "UAPI 查询我的 IP 接口",
+      "keywords_zh": [
+        "查询我的 IP"
+      ],
+      "keywords_en": [
+        "get network myip",
+        "network myip",
+        "myip"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-network-ping",
+      "operation_id": "get-network-ping",
+      "summary": "Ping 主机",
+      "method": "GET",
+      "path": "/network/ping",
+      "tag": "Network",
+      "display_name": "UAPI Ping 主机 接口",
+      "keywords_zh": [
+        "Ping 主机",
+        "Ping"
+      ],
+      "keywords_en": [
+        "get network ping",
+        "network ping",
+        "ping",
+        "ping host"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-network-pingmyip",
+      "operation_id": "get-network-pingmyip",
+      "summary": "Ping 我的 IP",
+      "method": "GET",
+      "path": "/network/pingmyip",
+      "tag": "Network",
+      "display_name": "UAPI Ping 我的 IP 接口",
+      "keywords_zh": [
+        "Ping 我的 IP",
+        "Ping"
+      ],
+      "keywords_en": [
+        "get network pingmyip",
+        "network pingmyip",
+        "pingmyip"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-network-portscan",
+      "operation_id": "get-network-portscan",
+      "summary": "端口扫描",
+      "method": "GET",
+      "path": "/network/portscan",
+      "tag": "Network",
+      "display_name": "UAPI 端口扫描 接口",
+      "keywords_zh": [
+        "端口扫描"
+      ],
+      "keywords_en": [
+        "get network portscan",
+        "network portscan",
+        "portscan"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-network-urlstatus",
+      "operation_id": "get-network-urlstatus",
+      "summary": "检查URL的可访问性状态",
+      "method": "GET",
+      "path": "/network/urlstatus",
+      "tag": "Network",
+      "display_name": "UAPI 检查URL的可访问性状态 接口",
+      "keywords_zh": [
+        "检查URL的可访问性状态",
+        "URL状态"
+      ],
+      "keywords_en": [
+        "get network urlstatus",
+        "network urlstatus",
+        "urlstatus"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-network-whois",
+      "operation_id": "get-network-whois",
+      "summary": "查询域名的WHOIS注册信息",
+      "method": "GET",
+      "path": "/network/whois",
+      "tag": "Network",
+      "display_name": "UAPI 查询域名的WHOIS注册信息 接口",
+      "keywords_zh": [
+        "查询域名的WHOIS注册信息",
+        "微信域名检测"
+      ],
+      "keywords_en": [
+        "get network whois",
+        "network whois",
+        "whois",
+        "whois lookup"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-network-wxdomain",
+      "operation_id": "get-network-wxdomain",
+      "summary": "检查域名在微信中的访问状态",
+      "method": "GET",
+      "path": "/network/wxdomain",
+      "tag": "Network",
+      "display_name": "UAPI 检查域名在微信中的访问状态 接口",
+      "keywords_zh": [
+        "检查域名在微信中的访问状态",
+        "URL状态",
+        "微信域名检测"
+      ],
+      "keywords_en": [
+        "get network wxdomain",
+        "network wxdomain",
+        "wxdomain"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-saying",
+      "operation_id": "get-saying",
+      "summary": "一言",
+      "method": "GET",
+      "path": "/saying",
+      "tag": "Poem",
+      "display_name": "UAPI 一言 接口",
+      "keywords_zh": [
+        "一言"
+      ],
+      "keywords_en": [
+        "get saying",
+        "saying",
+        "random saying"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-answerbook-ask",
+      "operation_id": "get-answerbook-ask",
+      "summary": "答案之书",
+      "method": "GET",
+      "path": "/answerbook/ask",
+      "tag": "Random",
+      "display_name": "UAPI 答案之书 接口",
+      "keywords_zh": [
+        "答案之书"
+      ],
+      "keywords_en": [
+        "get answerbook ask",
+        "answerbook ask",
+        "ask"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-answerbook-ask",
+      "operation_id": "post-answerbook-ask",
+      "summary": "答案之书 (POST)",
+      "method": "POST",
+      "path": "/answerbook/ask",
+      "tag": "Random",
+      "display_name": "UAPI 答案之书 (POST) 接口",
+      "keywords_zh": [
+        "答案之书 (POST)",
+        "答案之书"
+      ],
+      "keywords_en": [
+        "post answerbook ask",
+        "answerbook ask",
+        "ask"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-random-image",
+      "operation_id": "get-random-image",
+      "summary": "随机图片",
+      "method": "GET",
+      "path": "/random/image",
+      "tag": "Random",
+      "display_name": "UAPI 随机图片 接口",
+      "keywords_zh": [
+        "随机图片",
+        "随机字符串",
+        "随机结果"
+      ],
+      "keywords_en": [
+        "get random image",
+        "random image",
+        "image",
+        "random string",
+        "random generator"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-random-string",
+      "operation_id": "get-random-string",
+      "summary": "随机字符串",
+      "method": "GET",
+      "path": "/random/string",
+      "tag": "Random",
+      "display_name": "UAPI 随机字符串 接口",
+      "keywords_zh": [
+        "随机字符串",
+        "随机图片",
+        "随机结果"
+      ],
+      "keywords_en": [
+        "get random string",
+        "random string",
+        "string",
+        "random image",
+        "random generator"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-github-repo",
+      "operation_id": "get-github-repo",
+      "summary": "查询 GitHub 仓库",
+      "method": "GET",
+      "path": "/github/repo",
+      "tag": "Social",
+      "display_name": "UAPI 查询 GitHub 仓库 接口",
+      "keywords_zh": [
+        "查询 GitHub 仓库",
+        "GitHub仓库查询"
+      ],
+      "keywords_en": [
+        "get github repo",
+        "github repo",
+        "repo",
+        "github repo summary"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-social-bilibili-archives",
+      "operation_id": "get-social-bilibili-archives",
+      "summary": "查询 B站投稿",
+      "method": "GET",
+      "path": "/social/bilibili/archives",
+      "tag": "Social",
+      "display_name": "UAPI 查询 B站投稿 接口",
+      "keywords_zh": [
+        "查询 B站投稿"
+      ],
+      "keywords_en": [
+        "get social bilibili archives",
+        "social bilibili archives",
+        "archives",
+        "bilibili user lookup",
+        "bilibili video info",
+        "bilibili replies",
+        "bilibili live room"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-social-bilibili-liveroom",
+      "operation_id": "get-social-bilibili-liveroom",
+      "summary": "查询 B站直播间",
+      "method": "GET",
+      "path": "/social/bilibili/liveroom",
+      "tag": "Social",
+      "display_name": "UAPI 查询 B站直播间 接口",
+      "keywords_zh": [
+        "查询 B站直播间",
+        "B站直播间"
+      ],
+      "keywords_en": [
+        "get social bilibili liveroom",
+        "social bilibili liveroom",
+        "liveroom",
+        "bilibili user lookup",
+        "bilibili video info",
+        "bilibili replies",
+        "bilibili live room"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-social-bilibili-replies",
+      "operation_id": "get-social-bilibili-replies",
+      "summary": "查询 B站评论",
+      "method": "GET",
+      "path": "/social/bilibili/replies",
+      "tag": "Social",
+      "display_name": "UAPI 查询 B站评论 接口",
+      "keywords_zh": [
+        "查询 B站评论",
+        "B站评论"
+      ],
+      "keywords_en": [
+        "get social bilibili replies",
+        "social bilibili replies",
+        "replies",
+        "bilibili user lookup",
+        "bilibili video info",
+        "bilibili replies",
+        "bilibili live room"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-social-bilibili-userinfo",
+      "operation_id": "get-social-bilibili-userinfo",
+      "summary": "查询 B站用户",
+      "method": "GET",
+      "path": "/social/bilibili/userinfo",
+      "tag": "Social",
+      "display_name": "UAPI 查询 B站用户 接口",
+      "keywords_zh": [
+        "查询 B站用户",
+        "B站用户"
+      ],
+      "keywords_en": [
+        "get social bilibili userinfo",
+        "social bilibili userinfo",
+        "userinfo",
+        "bilibili user lookup",
+        "bilibili video info",
+        "bilibili replies",
+        "bilibili live room"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-social-bilibili-videoinfo",
+      "operation_id": "get-social-bilibili-videoinfo",
+      "summary": "查询 B站视频",
+      "method": "GET",
+      "path": "/social/bilibili/videoinfo",
+      "tag": "Social",
+      "display_name": "UAPI 查询 B站视频 接口",
+      "keywords_zh": [
+        "查询 B站视频",
+        "B站视频"
+      ],
+      "keywords_en": [
+        "get social bilibili videoinfo",
+        "social bilibili videoinfo",
+        "videoinfo",
+        "bilibili user lookup",
+        "bilibili video info",
+        "bilibili replies",
+        "bilibili live room"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-social-qq-groupinfo",
+      "operation_id": "get-social-qq-groupinfo",
+      "summary": "查询 QQ 群信息",
+      "method": "GET",
+      "path": "/social/qq/groupinfo",
+      "tag": "Social",
+      "display_name": "UAPI 查询 QQ 群信息 接口",
+      "keywords_zh": [
+        "查询 QQ 群信息",
+        "QQ信息",
+        "QQ群信息"
+      ],
+      "keywords_en": [
+        "get social qq groupinfo",
+        "social qq groupinfo",
+        "groupinfo",
+        "qq profile lookup",
+        "qq group info"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-social-qq-userinfo",
+      "operation_id": "get-social-qq-userinfo",
+      "summary": "查询 QQ 信息",
+      "method": "GET",
+      "path": "/social/qq/userinfo",
+      "tag": "Social",
+      "display_name": "UAPI 查询 QQ 信息 接口",
+      "keywords_zh": [
+        "查询 QQ 信息",
+        "QQ信息",
+        "QQ群信息"
+      ],
+      "keywords_en": [
+        "get social qq userinfo",
+        "social qq userinfo",
+        "userinfo",
+        "qq profile lookup",
+        "qq group info"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-status-ratelimit",
+      "operation_id": "get-status-ratelimit",
+      "summary": "限流状态",
+      "method": "GET",
+      "path": "/status/ratelimit",
+      "tag": "Status",
+      "display_name": "UAPI 限流状态 接口",
+      "keywords_zh": [
+        "限流状态",
+        "并发状态"
+      ],
+      "keywords_en": [
+        "get status ratelimit",
+        "status ratelimit",
+        "ratelimit",
+        "rate limit status",
+        "concurrency status"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-status-usage",
+      "operation_id": "get-status-usage",
+      "summary": "获取API端点使用统计",
+      "method": "GET",
+      "path": "/status/usage",
+      "tag": "Status",
+      "display_name": "UAPI 获取API端点使用统计 接口",
+      "keywords_zh": [
+        "获取API端点使用统计",
+        "使用统计"
+      ],
+      "keywords_en": [
+        "get status usage",
+        "status usage",
+        "usage",
+        "rate limit status",
+        "usage statistics",
+        "concurrency status",
+        "api usage dashboard"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-text-aes-decrypt",
+      "operation_id": "post-text-aes-decrypt",
+      "summary": "AES 解密",
+      "method": "POST",
+      "path": "/text/aes/decrypt",
+      "tag": "Text",
+      "display_name": "UAPI AES 解密 接口",
+      "keywords_zh": [
+        "AES 解密",
+        "AES解密"
+      ],
+      "keywords_en": [
+        "post text aes decrypt",
+        "text aes decrypt",
+        "decrypt",
+        "aes encrypt",
+        "aes decrypt",
+        "text analysis",
+        "text conversion"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-text-aes-decrypt-advanced",
+      "operation_id": "post-text-aes-decrypt-advanced",
+      "summary": "AES高级解密",
+      "method": "POST",
+      "path": "/text/aes/decrypt-advanced",
+      "tag": "Text",
+      "display_name": "UAPI AES高级解密 接口",
+      "keywords_zh": [
+        "AES高级解密",
+        "AES解密"
+      ],
+      "keywords_en": [
+        "post text aes decrypt advanced",
+        "text aes decrypt-advanced",
+        "decrypt-advanced",
+        "aes encrypt",
+        "aes decrypt",
+        "text analysis",
+        "text conversion"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-text-aes-encrypt",
+      "operation_id": "post-text-aes-encrypt",
+      "summary": "AES 加密",
+      "method": "POST",
+      "path": "/text/aes/encrypt",
+      "tag": "Text",
+      "display_name": "UAPI AES 加密 接口",
+      "keywords_zh": [
+        "AES 加密",
+        "AES加密"
+      ],
+      "keywords_en": [
+        "post text aes encrypt",
+        "text aes encrypt",
+        "encrypt",
+        "aes encrypt",
+        "aes decrypt",
+        "text analysis",
+        "text conversion"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-text-aes-encrypt-advanced",
+      "operation_id": "post-text-aes-encrypt-advanced",
+      "summary": "AES高级加密",
+      "method": "POST",
+      "path": "/text/aes/encrypt-advanced",
+      "tag": "Text",
+      "display_name": "UAPI AES高级加密 接口",
+      "keywords_zh": [
+        "AES高级加密",
+        "AES加密"
+      ],
+      "keywords_en": [
+        "post text aes encrypt advanced",
+        "text aes encrypt-advanced",
+        "encrypt-advanced",
+        "aes encrypt",
+        "aes decrypt",
+        "text analysis",
+        "text conversion"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-text-analyze",
+      "operation_id": "post-text-analyze",
+      "summary": "文本分析",
+      "method": "POST",
+      "path": "/text/analyze",
+      "tag": "Text",
+      "display_name": "UAPI 文本分析 接口",
+      "keywords_zh": [
+        "文本分析"
+      ],
+      "keywords_en": [
+        "post text analyze",
+        "text analyze",
+        "analyze",
+        "text analysis",
+        "text conversion"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-text-base64-decode",
+      "operation_id": "post-text-base64-decode",
+      "summary": "Base64 解码",
+      "method": "POST",
+      "path": "/text/base64/decode",
+      "tag": "Text",
+      "display_name": "UAPI Base64 解码 接口",
+      "keywords_zh": [
+        "Base64 解码",
+        "Base64解码"
+      ],
+      "keywords_en": [
+        "post text base64 decode",
+        "text base64 decode",
+        "decode",
+        "base64 encode",
+        "base64 decode",
+        "text analysis",
+        "text conversion"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-text-base64-encode",
+      "operation_id": "post-text-base64-encode",
+      "summary": "Base64 编码",
+      "method": "POST",
+      "path": "/text/base64/encode",
+      "tag": "Text",
+      "display_name": "UAPI Base64 编码 接口",
+      "keywords_zh": [
+        "Base64 编码",
+        "Base64编码"
+      ],
+      "keywords_en": [
+        "post text base64 encode",
+        "text base64 encode",
+        "encode",
+        "base64 encode",
+        "base64 decode",
+        "text analysis",
+        "text conversion"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-text-convert",
+      "operation_id": "post-text-convert",
+      "summary": "格式转换",
+      "method": "POST",
+      "path": "/text/convert",
+      "tag": "Text",
+      "display_name": "UAPI 格式转换 接口",
+      "keywords_zh": [
+        "格式转换"
+      ],
+      "keywords_en": [
+        "post text convert",
+        "text convert",
+        "convert",
+        "text analysis",
+        "text conversion"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-text-md5",
+      "operation_id": "get-text-md5",
+      "summary": "MD5 哈希",
+      "method": "GET",
+      "path": "/text/md5",
+      "tag": "Text",
+      "display_name": "UAPI MD5 哈希 接口",
+      "keywords_zh": [
+        "MD5 哈希",
+        "MD5"
+      ],
+      "keywords_en": [
+        "get text md5",
+        "text md5",
+        "md5",
+        "md5 hash",
+        "text analysis",
+        "text conversion"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-text-md5",
+      "operation_id": "post-text-md5",
+      "summary": "MD5 哈希 (POST)",
+      "method": "POST",
+      "path": "/text/md5",
+      "tag": "Text",
+      "display_name": "UAPI MD5 哈希 (POST) 接口",
+      "keywords_zh": [
+        "MD5 哈希 (POST)",
+        "MD5"
+      ],
+      "keywords_en": [
+        "post text md5",
+        "text md5",
+        "md5",
+        "md5 hash",
+        "text analysis",
+        "text conversion"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-text-md5-verify",
+      "operation_id": "post-text-md5-verify",
+      "summary": "MD5 校验",
+      "method": "POST",
+      "path": "/text/md5/verify",
+      "tag": "Text",
+      "display_name": "UAPI MD5 校验 接口",
+      "keywords_zh": [
+        "MD5 校验",
+        "MD5"
+      ],
+      "keywords_en": [
+        "post text md5 verify",
+        "text md5 verify",
+        "verify",
+        "md5 hash",
+        "text analysis",
+        "text conversion"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-ai-translate",
+      "operation_id": "post-ai-translate",
+      "summary": "AI智能翻译",
+      "method": "POST",
+      "path": "/ai/translate",
+      "tag": "Translate",
+      "display_name": "UAPI AI智能翻译 接口",
+      "keywords_zh": [
+        "AI智能翻译"
+      ],
+      "keywords_en": [
+        "post ai translate",
+        "ai translate",
+        "translate",
+        "ai translation"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-ai-translate-languages",
+      "operation_id": "get-ai-translate-languages",
+      "summary": "AI翻译配置",
+      "method": "GET",
+      "path": "/ai/translate/languages",
+      "tag": "Translate",
+      "display_name": "UAPI AI翻译配置 接口",
+      "keywords_zh": [
+        "AI翻译配置",
+        "AI翻译",
+        "翻译配置"
+      ],
+      "keywords_en": [
+        "get ai translate languages",
+        "ai translate languages",
+        "languages",
+        "ai translation"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-translate-stream",
+      "operation_id": "post-translate-stream",
+      "summary": "流式翻译（中英互译）",
+      "method": "POST",
+      "path": "/translate/stream",
+      "tag": "Translate",
+      "display_name": "UAPI 流式翻译（中英互译） 接口",
+      "keywords_zh": [
+        "流式翻译（中英互译）",
+        "流式翻译",
+        "中英互译"
+      ],
+      "keywords_en": [
+        "post translate stream",
+        "translate stream",
+        "stream",
+        "stream translation"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-translate-text",
+      "operation_id": "post-translate-text",
+      "summary": "翻译",
+      "method": "POST",
+      "path": "/translate/text",
+      "tag": "Translate",
+      "display_name": "UAPI 翻译 接口",
+      "keywords_zh": [
+        "翻译",
+        "文本翻译",
+        "AI翻译",
+        "流式翻译",
+        "批量翻译",
+        "翻译配置"
+      ],
+      "keywords_en": [
+        "post translate text",
+        "translate text",
+        "text",
+        "text translation"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-web-tomarkdown-async",
+      "operation_id": "post-web-tomarkdown-async",
+      "summary": "网页转 Markdown",
+      "method": "POST",
+      "path": "/web/tomarkdown/async",
+      "tag": "WebParse",
+      "display_name": "UAPI 网页转 Markdown 接口",
+      "keywords_zh": [
+        "网页转 Markdown",
+        "网页转Markdown",
+        "网页元数据",
+        "提取网页图片",
+        "网页解析"
+      ],
+      "keywords_en": [
+        "post web tomarkdown async",
+        "web tomarkdown async",
+        "async",
+        "web to markdown",
+        "web parsing"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-web-tomarkdown-async-status",
+      "operation_id": "get-web-tomarkdown-async-status",
+      "summary": "转换任务状态",
+      "method": "GET",
+      "path": "/web/tomarkdown/async/{task_id}",
+      "tag": "WebParse",
+      "display_name": "UAPI 转换任务状态 接口",
+      "keywords_zh": [
+        "转换任务状态"
+      ],
+      "keywords_en": [
+        "get web tomarkdown async status",
+        "web tomarkdown async",
+        "async",
+        "web to markdown",
+        "web parsing"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-webparse-extractimages",
+      "operation_id": "get-webparse-extractimages",
+      "summary": "提取网页图片",
+      "method": "GET",
+      "path": "/webparse/extractimages",
+      "tag": "WebParse",
+      "display_name": "UAPI 提取网页图片 接口",
+      "keywords_zh": [
+        "提取网页图片",
+        "网页转Markdown",
+        "网页元数据",
+        "网页解析"
+      ],
+      "keywords_en": [
+        "get webparse extractimages",
+        "webparse extractimages",
+        "extractimages"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-webparse-metadata",
+      "operation_id": "get-webparse-metadata",
+      "summary": "提取网页元数据",
+      "method": "GET",
+      "path": "/webparse/metadata",
+      "tag": "WebParse",
+      "display_name": "UAPI 提取网页元数据 接口",
+      "keywords_zh": [
+        "提取网页元数据",
+        "网页转Markdown",
+        "网页元数据",
+        "提取网页图片",
+        "网页解析"
+      ],
+      "keywords_en": [
+        "get webparse metadata",
+        "webparse metadata",
+        "metadata",
+        "extract metadata"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-sensitive-word-analyze",
+      "operation_id": "post-sensitive-word-analyze",
+      "summary": "分析敏感词",
+      "method": "POST",
+      "path": "/sensitive-word/analyze",
+      "tag": "敏感词识别",
+      "display_name": "UAPI 分析敏感词 接口",
+      "keywords_zh": [
+        "分析敏感词",
+        "敏感词检测"
+      ],
+      "keywords_en": [
+        "post sensitive word analyze",
+        "sensitive-word analyze",
+        "analyze",
+        "sensitive word detection"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-sensitive-word-analyze-query",
+      "operation_id": "get-sensitive-word-analyze-query",
+      "summary": "敏感词分析 (GET)",
+      "method": "GET",
+      "path": "/sensitive-word/analyze-query",
+      "tag": "敏感词识别",
+      "display_name": "UAPI 敏感词分析 (GET) 接口",
+      "keywords_zh": [
+        "敏感词分析 (GET)",
+        "敏感词检测"
+      ],
+      "keywords_en": [
+        "get sensitive word analyze query",
+        "sensitive-word analyze-query",
+        "analyze-query",
+        "sensitive word detection"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-sensitive-word-quick-check",
+      "operation_id": "post-sensitive-word-quick-check",
+      "summary": "敏感词检测（快速）",
+      "method": "POST",
+      "path": "/text/profanitycheck",
+      "tag": "敏感词识别",
+      "display_name": "UAPI 敏感词检测（快速） 接口",
+      "keywords_zh": [
+        "敏感词检测（快速）",
+        "敏感词检测",
+        "快速审核"
+      ],
+      "keywords_en": [
+        "post sensitive word quick check",
+        "text profanitycheck",
+        "profanitycheck",
+        "sensitive word detection",
+        "text moderation",
+        "profanity check"
+      ]
+    },
+    {
+      "skill_name": "uapi-post-search-aggregate",
+      "operation_id": "post-search-aggregate",
+      "summary": "智能搜索",
+      "method": "POST",
+      "path": "/search/aggregate",
+      "tag": "智能搜索",
+      "display_name": "UAPI 智能搜索 接口",
+      "keywords_zh": [
+        "智能搜索",
+        "搜索结果聚合",
+        "实时网页搜索",
+        "搜索排序",
+        "网页搜索",
+        "站内搜索",
+        "搜索引擎配置",
+        "实时搜索",
+        "文件类型搜索"
+      ],
+      "keywords_en": [
+        "post search aggregate",
+        "search aggregate",
+        "aggregate",
+        "aggregated search",
+        "live web search",
+        "ranked search results",
+        "smart search",
+        "web search",
+        "site search",
+        "search engine config",
+        "realtime search",
+        "filetype search"
+      ]
+    },
+    {
+      "skill_name": "uapi-get-search-engines",
+      "operation_id": "get-search-engines",
+      "summary": "搜索引擎配置",
+      "method": "GET",
+      "path": "/search/engines",
+      "tag": "智能搜索",
+      "display_name": "UAPI 搜索引擎配置 接口",
+      "keywords_zh": [
+        "搜索引擎配置",
+        "智能搜索",
+        "网页搜索",
+        "站内搜索",
+        "实时搜索",
+        "文件类型搜索"
+      ],
+      "keywords_en": [
+        "get search engines",
+        "search engines",
+        "engines",
+        "smart search",
+        "web search",
+        "site search",
+        "search engine config",
+        "realtime search",
+        "filetype search"
+      ]
+    }
+  ]
+}

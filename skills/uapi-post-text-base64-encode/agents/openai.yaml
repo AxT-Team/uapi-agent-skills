@@ -1,0 +1,6 @@
+interface:
+  display_name: "UAPI Base64 编码 接口"
+  short_description: "使用 UAPI 的Base64 编码接口，并说明参数、调用方式和返回码"
+  default_prompt: "使用 $uapi-post-text-base64-encode 直接调用 POST /text/base64/encode，并先确认必填参数、默认值和生效条件。"
+policy:
+  allow_implicit_invocation: true

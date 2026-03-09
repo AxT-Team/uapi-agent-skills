@@ -1,0 +1,6 @@
+interface:
+  display_name: "UAPI SVG转图片 接口"
+  short_description: "使用 UAPI 的SVG转图片接口，并说明参数、调用方式和返回码"
+  default_prompt: "使用 $uapi-post-image-svg 直接调用 POST /image/svg，并先确认必填参数、默认值和生效条件。"
+policy:
+  allow_implicit_invocation: true
