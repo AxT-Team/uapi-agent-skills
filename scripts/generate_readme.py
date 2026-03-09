@@ -10,38 +10,10 @@ ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "skills" / "_manifest.json"
 README_PATH = ROOT / "README.md"
 REPO_SLUG = "AxT-Team/uapi-agent-skills"
-REPO_URL = f"https://github.com/{REPO_SLUG}"
 
 
 def load_manifest() -> dict:
     return json.loads(MANIFEST_PATH.read_text(encoding="utf-8"))
-
-
-def collect_directories() -> list[str]:
-    directories: list[str] = []
-    for path in sorted(ROOT.rglob("*")):
-        if not path.is_dir():
-            continue
-        if ".git" in path.parts or "__pycache__" in path.parts:
-            continue
-        directories.append(path.relative_to(ROOT).as_posix() + "/")
-    return directories
-
-
-def render_all_directories_block(directories: list[str]) -> list[str]:
-    lines = [
-        "## 全部目录",
-        "",
-        "<details>",
-        "<summary>展开查看全部目录</summary>",
-        "",
-    ]
-
-    for directory in directories:
-        lines.append(f"- `{directory}`")
-
-    lines.extend(["", "</details>", ""])
-    return lines
 
 
 def render_category_block(skills: list[dict]) -> list[str]:
@@ -91,13 +63,15 @@ def render_category_block(skills: list[dict]) -> list[str]:
 def build_readme() -> str:
     manifest = load_manifest()
     skills = manifest["skills"]
-    directories = collect_directories()
 
     lines = [
         "# UAPI Agent Skills",
         "",
+        f"这个仓库包含 {manifest['skill_count']} 个单接口 skill，每个 skill 只对应一个 UAPI 接口。",
+        "",
+        "适合按接口粒度给 AI 安装和调用。下面按分类展开，点开具体接口后可以直接复制安装命令。",
+        "",
     ]
-    lines.extend(render_all_directories_block(directories))
     lines.extend(render_category_block(skills))
     return "\n".join(lines).rstrip() + "\n"
 
